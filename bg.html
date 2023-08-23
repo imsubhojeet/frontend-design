@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Image</title>
+    <style>
+      body {
+        height: 100vh;
+      }
+      .bgimg {
+        height: 50vh;
+        width: 900px;
+        background-image: url(imgs/image.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: red;
+        background-position: center;
+      }
+      .bgimg:hover {
+        background-image: url("./imgs/sbi.gif");
+      }
+      a {
+        color: green;
+        text-decoration: none;
+        font-size: 20px;
+        border: 1px solid green;
+        padding: 20px;
+      }
+      a:hover {
+        color: #fff;
+        background-color: green;
+      }
+      a:active {
+        color: #fff;
+        background-color: red;
+      }
+      .clrchng {
+        color: #fff;
+        background-color: green;
+        border: 1px solid green;
+        padding: 16px 28px;
+      }
+      .clrchng:hover {
+        color: green;
+        background-color: transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bgimg"></div>
+
+    <div style="display: block; margin: 30px">
+      <a href="#">Explore Me</a>
+      <a class="clrchng" href="#">Explore Me</a>
+    </div>
+  </body>
+</html>

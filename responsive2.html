@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detailed Responsive</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      img {
+        max-width: 100%;
+      }
+      .container {
+        max-width: 80%;
+        margin: 30px auto;
+      }
+      .parent_div {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .sub_div {
+        width: 25%;
+      }
+      .sub_sub_div {
+        margin: 10px;
+        border: 1px solid #ccc;
+        box-shadow: 0px 1px 16px #ccc;
+        border-radius: 5px;
+        overflow: hidden;
+      }
+      .details {
+        padding: 10px 8px 15px;
+      }
+      /* for tablet devices */
+      @media (max-width: 768px) {
+        .container {
+          max-width: 90%;
+        }
+        .sub_div {
+          width: 50%;
+        }
+      }
+      /* for mobile device */
+      @media (max-width: 568px) {
+        .container {
+          max-width: 100%;
+        }
+        .sub_div {
+          width: 100%;
+        }
+        .sub_sub_div {
+          margin: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="parent_div">
+        <div class="sub_div">
+          <div class="sub_sub_div">
+            <img src="./imgs/image.png" alt="" />
+            <div class="details">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <a href="#">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="sub_div">
+          <div class="sub_sub_div">
+            <img src="./imgs/image.png" alt="" />
+            <div class="details">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <a href="#">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="sub_div">
+          <div class="sub_sub_div">
+            <img src="./imgs/image.png" alt="" />
+            <div class="details">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <a href="#">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="sub_div">
+          <div class="sub_sub_div">
+            <img src="./imgs/image.png" alt="" />
+            <div class="details">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <a href="#">Explore</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
